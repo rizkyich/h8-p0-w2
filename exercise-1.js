@@ -1,7 +1,7 @@
 // 1. Newton Second Law
 
-GET 'm' with any value 
-GET 'a' with any value 
+SET 'm' to 600 
+SET 'a' to 2 
 GET 'F' without any value 
 
 CALCULATE 'm' times 'a'
@@ -14,9 +14,9 @@ DISPLAY 'F'
 
 GET 'year' with any value
 
-IF 'year' mod 4 equals to 0 
-  DO IF 'year' mod 100 equals to 0 
-    DO IF 'year' mod 400 equals to 0 
+IF 'year' mod 4 equals to 0 THEN
+  IF 'year' mod 100 equals to 0 THEN
+    IF 'year' mod 400 equals to 0 
       DISPLAY 'year' is leap year
     ELSE 
       DISPLAY 'year' is not leap year
@@ -24,9 +24,27 @@ IF 'year' mod 4 equals to 0
     DISPLAY 'year' is leap year 
 ELSE 
   DISPLAY 'year' is not leap year
+END IF
 
 
 // 3. Laundry Day
-GET 'clothes' with 20
 
-WHILE 'clothes' <= 20
+SET 'clothes' to 20
+SET 'washingMachine' to 0
+
+WHILE 'washingMachine' is less than 'clothes' 
+  ADD 'washingMachine' by 1
+END WHILE
+
+
+// 4. Periksa Kuku
+SET 'studentCount' to 0
+
+WHILE 'studentCount' is less than 40
+  INCREMENT 'studentCount'
+  IF student's nails is long THEN
+    teacher praise the student
+  ELSE
+    teacher punish the student
+  END IF 
+END WHILE
