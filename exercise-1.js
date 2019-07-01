@@ -38,6 +38,7 @@ END WHILE
 
 
 // 4. Periksa Kuku
+
 SET 'studentCount' to 0
 
 WHILE 'studentCount' is less than 40
