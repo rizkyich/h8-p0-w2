@@ -41,7 +41,7 @@ END WHILE
 SET 'studentCount' to 0
 
 WHILE 'studentCount' is less than 40
-  INCREMENT 'studentCount'
+  ADD 'studentCount' by 1
   IF student's nails is long THEN
     teacher praise the student
   ELSE
