@@ -44,8 +44,8 @@ SET 'studentCount' to 0
 WHILE 'studentCount' is less than 40
   ADD 'studentCount' by 1
   IF student's nails is long THEN
-    teacher praise the student
-  ELSE
     teacher punish the student
+  ELSE
+    teacher praise the student
   END IF 
 END WHILE
