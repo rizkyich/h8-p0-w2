@@ -38,10 +38,11 @@ END WHILE
 
 
 // 4. Periksa Kuku
+
 SET 'studentCount' to 0
 
 WHILE 'studentCount' is less than 40
-  INCREMENT 'studentCount'
+  ADD 'studentCount by'
   IF student's nails is long THEN
     teacher praise the student
   ELSE
