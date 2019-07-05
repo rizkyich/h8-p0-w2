@@ -13,10 +13,7 @@ var kodeTahun = '';
 switch (batasTanggal) {
   case true:
     kodeTanggal = tanggal;
-    
     break;
-  default:
-    console.log('Tanggal tidak tersedia');
 }
 
 
@@ -24,8 +21,6 @@ switch (batasTahun) {
   case true:
     kodeTahun = tahun;
     break;
-  default:
-    console.log('Tahun tidak tersedia');
 }
 
 
@@ -66,8 +61,6 @@ switch (bulan) {
   case 12:
     kodeBulan = ' Desember ';
     break;
-  default:
-    console.log('Bulan tidak tersedia');
 }
 
 
