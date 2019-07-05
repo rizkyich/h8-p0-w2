@@ -4,7 +4,7 @@ function konversiMenit(menit) {
     
   var minutes = menit % 60;
   var zero = '';
-  if (minute < 10) {
+  if (minutes < 10) {
     zero += 0;
   }
 
