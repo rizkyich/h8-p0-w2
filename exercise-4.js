@@ -1,44 +1,74 @@
-var tanggal = 13;
+var tanggal = 31;
 var bulan = 6;
-var tahun = 1997;
+var tahun = 2201;
+
+var batasTanggal = tanggal >= 1 && tanggal <= 31;
+var batasTahun = tahun >= 1900 && tahun <= 2200;
+
+var kodeTanggal = '';
+var kodeBulan = '';
+var kodeTahun = '';
+
+
+switch (batasTanggal) {
+  case true:
+    kodeTanggal = tanggal;
+    
+    break;
+  default:
+    console.log('Tanggal tidak tersedia');
+}
+
+
+switch (batasTahun) {
+  case true:
+    kodeTahun = tahun;
+    break;
+  default:
+    console.log('Tahun tidak tersedia');
+}
+
 
 switch (bulan) {
   case 1:
-    console.log(tanggal + ' Januari ' + tahun);
+    kodeBulan = ' Januari '    
     break;
   case 2:
-    console.log(tanggal + ' Februari ' + tahun);
+    kodeBulan = ' Februari '
     break;
   case 3:
-    console.log(tanggal + ' Maret ' + tahun);
+    kodeBulan = ' Maret '
     break;
   case 4:
-    console.log(tanggal + ' April ' + tahun);
+    kodeBulan = ' April '  
     break;
   case 5:
-    console.log(tanggal + ' Mei ' + tahun);
+    kodeBulan = ' Mei ';
     break;
   case 6:
-    console.log(tanggal + ' Juni ' + tahun);
+    kodeBulan = ' Juni ';  
     break;
   case 7:
-    console.log(tanggal + ' Juli ' + tahun);
+    kodeBulan = ' Juli '; 
     break;
   case 8:
-    console.log(tanggal + ' Agustus ' + tahun);
+    kodeBulan = ' Agustus ';    
     break;
   case 9:
-    console.log(tanggal + ' September ' + tahun);
+    kodeBulan = ' September ';
     break;
   case 10:
-    console.log(tanggal + ' Oktober ' + tahun);
+    kodeBulan = ' Oktober ';    
     break;
   case 11:
-    console.log(tanggal + ' November ' + tahun);
+    kodeBulan = ' November ';
     break;
   case 12:
-    console.log(tanggal + ' Desember ' + tahun);
+    kodeBulan = ' Desember ';
     break;
   default:
-    console.log('Input error');
+    console.log('Bulan tidak tersedia');
 }
+
+
+console.log(kodeTanggal + kodeBulan + kodeTahun);
