@@ -33,14 +33,3 @@ for (var k = 0; k < row3; k++) {
   console.log(star2);
   star2 = '';
 }
-
-//////////////////////////////////////////
-// Print barisan tangga tanpa nested loop
-// var row3 = 5;
-
-// for (var k = 0; k < row3; k++) {
-//   var star2 = '';
-//   star2 += '*';
-//   console.log(star2);
-// }
-/////////////////////////////////////////
