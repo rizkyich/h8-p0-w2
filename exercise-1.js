@@ -16,7 +16,7 @@ GET 'year' with any value
 
 IF 'year' mod 4 equals to 0 THEN
   IF 'year' mod 100 equals to 0 THEN
-    IF 'year' mod 400 equals to 0 
+    IF 'year' mod 400 equals to 0 THEN
       DISPLAY 'year' is leap year
     ELSE 
       DISPLAY 'year' is not leap year

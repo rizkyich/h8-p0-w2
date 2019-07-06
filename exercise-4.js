@@ -1,6 +1,6 @@
 var tanggal = 31;
 var bulan = 6;
-var tahun = 2201;
+var tahun = 1997;
 
 var batasTanggal = tanggal >= 1 && tanggal <= 31;
 var batasTahun = tahun >= 1900 && tahun <= 2200;
@@ -13,10 +13,9 @@ var kodeTahun = '';
 switch (batasTanggal) {
   case true:
     kodeTanggal = tanggal;
-    
     break;
   default:
-    console.log('Tanggal tidak tersedia');
+    kodeTanggal = 'Tanggal Invalid';
 }
 
 
@@ -25,22 +24,22 @@ switch (batasTahun) {
     kodeTahun = tahun;
     break;
   default:
-    console.log('Tahun tidak tersedia');
+    kodeTahun = 'Tahun Invalid';
 }
 
 
 switch (bulan) {
   case 1:
-    kodeBulan = ' Januari '    
+    kodeBulan = ' Januari ';   
     break;
   case 2:
-    kodeBulan = ' Februari '
+    kodeBulan = ' Februari ';
     break;
   case 3:
-    kodeBulan = ' Maret '
+    kodeBulan = ' Maret ';
     break;
   case 4:
-    kodeBulan = ' April '  
+    kodeBulan = ' April ';  
     break;
   case 5:
     kodeBulan = ' Mei ';
@@ -67,7 +66,7 @@ switch (bulan) {
     kodeBulan = ' Desember ';
     break;
   default:
-    console.log('Bulan tidak tersedia');
+    kodeBulan = ' Bulan Invalid ';
 }
 
 
